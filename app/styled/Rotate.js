@@ -1,4 +1,4 @@
-import styled, { keyframes } from 'styled-components';
+import styled, { keyframes } from 'styled-components'
 
 // Create the keyframes
 const rotate = keyframes`
@@ -8,15 +8,15 @@ const rotate = keyframes`
   to {
     transform: rotate(360deg);
   }
-`;
+`
 
-// Here we create a component that will rotate 
+// Here we create a component that will rotate
 // everything we pass in over two seconds
 const Rotate = styled.div`
   display: inline-block;
   animation: ${rotate} 2s linear infinite;
   padding: 2rem 1rem;
   font-size: 1.2rem;
-`;
+`
 
-export default Rotate;
+export default Rotate
