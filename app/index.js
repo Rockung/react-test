@@ -4,7 +4,10 @@ import { render } from 'react-dom'
 // import { Wrapper, Title } from './styled';
 // import { Button, Rotate } from './styled';
 
-import { Welcome, Comment } from './components'
+// import { Welcome, Comment } from './components'
+// import { Clock } from './components/Clock'
+// import { Toggle } from './components/Toggle'
+import { LoggingButton } from './components/LoggingButton'
 
 const comment = {
   date: new Date(),
@@ -19,14 +22,17 @@ class Root extends Component {
   render () {
     return (
     // <h1>Hello, world</h1>
-      <div>
-        <Welcome name="Kelvin" />
-        <Comment
-          date={comment.date}
-          text={comment.text}
-          author={comment.author}
-        />
-      </div>
+    // <div>
+    //   <Welcome name="Kelvin" />
+    //   <Comment
+    //     date={comment.date}
+    //     text={comment.text}
+    //     author={comment.author}
+    //   />
+    // </div>
+    // <Clock />
+    // <Toggle />
+      <LoggingButton />
     /*
     <Wrapper>
       <Title>

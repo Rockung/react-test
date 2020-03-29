@@ -1,6 +1,6 @@
 ## Mini Requirements for react/ES6
 
-Minimum required packages to boot a react/ES6 projects
+Minimum required packages to boot a react/ES6 project
 
 ```bash
 $ npm install --save react react-dom
@@ -29,7 +29,6 @@ Here's an example:
 
 ```javascript
 import React, { Component } from 'react'
-import { render } from 'react-dom'
 import { PropTypes } from 'prop-types'
 
 class Welcome extends Component {
@@ -46,6 +45,27 @@ Welcome.propTypes = {
 
 export { Welcome }
 ```
+
+## Experimental syntax
+
+Support for the experimental syntax 'classProperties'
+
+```bash
+$ npm install --save-dev eslint babel-eslint
+$ npm install --save-dev eslint-plugin-babel
+$ npm install --save-dev @babel/plugin-proposal-class-properties
+```
+- enable babel-eslint in `.eslintrc.js`
+
+  ```
+  {
+    parser: "babel-eslint",
+    plugins: [
+      "babel"
+    ]
+  }
+  ```
+- Add the plugin into webpack.config.js
 
 ## Styled Components
 

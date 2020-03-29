@@ -1,6 +1,4 @@
-/* eslint-disable no-unused-vars */
 import React, { Component } from 'react'
-import { render } from 'react-dom'
 import { PropTypes } from 'prop-types'
 
 import { UserInfo } from './UserInfo'
